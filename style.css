@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+}
+:root {
+    --board-color1: #161a1e;
+    --board-color2: #161a1e;
+    --score-board: #1e1f26;
+    --score-bar: #7bcdfe;
+    --score-text: #4d8db7;
+}
+
+.card{
+    width: 85%;
+    height: 80%;
+    background-image: linear-gradient(#161a1e 20%, #1b1f25 80% );
+    margin: 2% auto;
+    max-width: 750px;
+    opacity: 1;
+
+}
+.team {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding-left: 30px;
+    padding: 20px;
+}
+.logo {
+      width: 70px ;
+      height: 70px;
+      box-sizing: border-box;
+      background-color: var(--board-color1);
+      border-radius: 50%;
+      box-shadow:    1px 1px 2px inset var(--score-text),    -1px -1px 2px inset var(--score-text),     1px 1px 2px var(--board-color2),     -1px -1px 2px var(--board-color2),      2px 2px 4px 2px var(--score-bar),      -2px -2px 4px 2px var(--score-bar);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+.logo img {
+    width: 30px;
+    height: 50px;
+    margin-left:20px;
+    margin-top:7px;
+
+}
+.logo-txt {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo-txt h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+.top {
+    text-align: right;
+    padding-right: 60px;
+    color: #999;
+    word-spacing: 7px;
+}
+
+.score-board {
+    width: 85%;
+    height: 400px;
+    background-color: var(--score-board);
+    margin: 20px auto;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5),-2px -2px 7px var(--score-bar);
+
+}
+ tr:nth-child(6) td {
+    background-color: var(--score-bar);
+    color: #161a1e;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px var(--score-bar);
+    border: none;
+}
+.score-board table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+}
+.score-board tr {
+    padding: 15px;
+
+}
+.score-board td {
+    color: #fff;
+    border-bottom: 1px solid #1f2227;
+    padding: 0px 6px;
+
+
+}
+.score-board tr:last-child td{
+    border: none;
+
+}
+.run {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    margin-top: 15px;
+}
+.run h1 {
+    padding: 5px;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 11px;
+}
+.run span {
+    color: #999;
+    font-size: 1.2rem;
+
+}
+.run .run-score {
+    font-size: 2.2rem;
+    padding-left: 10px;
+    color: var(--score-text);
+}
+
+.score-card {
+    width: 100%;
+    height: 110px;
+    background-image: linear-gradient(to left ,#1e1f26 ,#0e141f 20%);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 13px 30px;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0px 2px 5px 0px var(--score-text), 0px -2px 5px 0px greenyellow;
+}
+.england {
+    width: 30%;
+}
+.score-here {
+    width: 40%;
+}
+.austrolia {
+    width: 30%;
+}
+.england-team {
+    display: flex;
+    margin-left: 10px;
+}
+.england-logo {
+    width: 50px ;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: var(--board-color1);
+    border-radius: 50%;
+    box-shadow:    1px 1px 2px inset var(--score-text),    -1px -1px 2px inset var(--score-text),     1px 1px 2px var(--board-color2),     -1px -1px 2px var(--board-color2),      2px 2px 4px 2px var(--score-bar),      -2px -2px 4px 2px var(--score-bar);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.austrlia-logo {
+    box-shadow:    1px 1px 2px inset greenyellow,    -1px -1px 2px inset greenyellow,     1px 1px 2px var(--board-color2),     -1px -1px 2px var(--board-color2),      2px 2px 4px 2px var(--score-bar),      -2px -2px 4px 2px greenyellow;
+    margin-top: 10px;
+}
+
+
+
+.england-logo img {
+    width: 20px;
+    height: 30px;
+    margin-left:15px;
+    margin-top:7px;
+}
+.eng-logo-txt {
+    font-size: 0.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 20px;
+}
+.runs {
+    color: #7bcdfe;
+    font-size: 2rem;
+}
+.overs {
+    color: #fff;
+    padding-left: 25px;
+    font-size: 0.6rem;
+    padding-top: 20px;
+    line-height: 25px;
+}
+.bar {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 40px;
+    padding-top: 0px;
+    display: flex;
+    color: #fff;
+
+
+}
+.player-1 {
+    font-size: 0.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+.player-2 {
+    width: 50%;
+    font-size: 0.5rem;
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    padding:10px 20px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px #4d8db7,-2px -2px 4px #4d8db7;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.rn {
+    font-size: 1.2rem;
+}
+.pt {
+    text-align: center;
+    padding-top: 13px;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.austrolia-team {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.aus-text {
+    font-size: 0.6rem;
+    line-height: 25px;
+
+}
+.boller {
+    font-size: 1.1rem;
+    color: greenyellow;
+}
+
+.boxes {
+    display: flex;
+    padding: 5px;
+    padding-top: 10px;
+
+}
+.box1, .box2,.box3, .box4 , .box5, .box6 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid #000;
+    box-sizing: content-box;
+    background-color: #fff;
+    outline: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.box1 {
+    margin-left: 0;
+    padding-left: 0;
+}
+.box6 {
+    background-color: #000;
+}
